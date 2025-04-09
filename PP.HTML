@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Corazón en CSS</title>
+  <style>
+    .corazon {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transform: rotate(-45deg);
+      margin: 50px;
+    }
+
+    .corazon::before,
+    .corazon::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .corazon::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .corazon::after {
+      left: 50px;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="corazon"></div>
+
+</body>
+</html>

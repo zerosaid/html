@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUNIOR</title>
+    <link rel="shortcut icon" href="img/tibu.jpg" type="image/x-icon">
+
+ <style>   
+ body{
+        background-color: rgb(255, 212, 212);
+        
+        /* background-image: url(https://www.smartick.es/blog/wp-content/uploads/2023/07/Tablero-de-ajedrez-azul.png);
+        background-repeat:no-repeat; */
+        
+    
+    }     
+    .corazon {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transform: rotate(-45deg);
+      margin: 50px;
+    }
+
+    .corazon::before,
+    .corazon::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+    }
+
+    .corazon::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .corazon::after {
+      left: 50px;
+      top: 0;
+    }
+    
+    .pepe {
+        border-color: #f0ffff;
+        border-width: 10px;
+        border-style: solid; 
+        border-radius: 1px;
+
+        width: 400px;
+        height: 400px;
+        
+        background-image: url(img/junior.png),linear-gradient(to bottom right,blue, white,red, blue, white,red);
+        background-position: center,center;
+        background-repeat:no-repeat;
+    }
+    
+  </style>
+</head>
+
+<body>
+    <h1>Bordes</h1>
+    <hr>
+    <div class="corazon">
+    </div>
+    <div class="pepe" align="center"><strong>
+        JUNIOR TÚ PAPÁ</strong>
+    </div>
+</body>
+</html>
